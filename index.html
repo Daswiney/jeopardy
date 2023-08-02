@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Jeopardy</title>
+  <link href="https://fonts.googleapis.com/css?family=Copse&display=swap"
+        rel="stylesheet">
+  <link rel="stylesheet" href="jeopardy.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Jeopardy Game</h1>
+    <button id="start-btn">Start / Restart</button>
+    <div id="loading-spinner" class="loader"></div>
+  </div>
+
+<table id="jeopardy">
+      <!-- The table headers (category titles) will be filled here -->
+      <thead>
+        <tr>
+          <!-- Category titles will be inserted here -->
+        </tr>
+      </thead>
+      <!-- The table body (question cells) will be filled here -->
+      <tbody>
+        <!-- NUM_QUESTIONS_PER_CAT number of rows will be inserted here -->
+      </tbody>
+    </table>
+    
+<script src="https://unpkg.com/jquery"></script>
+<script src="https://unpkg.com/axios/dist/axios.js"></script>
+<script src="https://unpkg.com/lodash"></script>
+<script src="jeopardy.js"></script>
+
+</body>
+</html>

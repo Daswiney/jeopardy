@@ -1,0 +1,98 @@
+/* some colors you may find useful:
+  #115ff4
+  #060ce9
+  #28a200
+  #8d2ab5
+  #74119c
+*/
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#start-btn {
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Add this loader style for the loading spinner */
+.loader {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+  display: none;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#jeopardy {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+#jeopardy th,
+#jeopardy td {
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #000;
+  font-size: 18px;
+}
+
+#jeopardy th {
+  background-color: #060ce9;
+  color: #fff;
+}
+
+#jeopardy td.question-cell {
+  background-color: #115ff4;
+  color: #fff;
+  cursor: pointer;
+}
+
+#jeopardy td.question-cell.answer-shown {
+  background-color: #00ff00; 
+}
+
+/* th:first-child, td:first-child {
+  background-color: #444;
+  color: #fff;
+} */
+
